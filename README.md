@@ -5,7 +5,7 @@ Multiple linear regression analysis to identify which variables in the dataset p
 ## Linear Regression to Predict MPG
 
 ### Data Analysis
-1st Model used:	summary(lm(mpg ~  vehicle_length + vehicle_weight + spoiler_angle  + ground_clearance + AWD, data=mecha_mpg))
+#### 1st Model used:	summary(lm(mpg ~  vehicle_length + vehicle_weight + spoiler_angle  + ground_clearance + AWD, data=mecha_mpg))
 Summary:	Coefficients:
                    	Estimate 	Std.Error	t value 		Pr(>|t|)    
 (Intercept)      	-1.040e+02  	1.585e+01  	-6.559 		5.08e-08 ***
@@ -19,7 +19,7 @@ Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
-2nd Model used:	summary(lm(mpg ~  vehicle_length + ground_clearance, data=mecha_mpg))
+#### 2nd Model used:	summary(lm(mpg ~  vehicle_length + ground_clearance, data=mecha_mpg))
 Summary:	Coefficients:
                  	Estimate 	Std. Error 	t value 		Pr(>|t|)    
 (Intercept)      -91.5573    	13.9649  	-6.556 		3.86e-08 ***
@@ -29,8 +29,6 @@ ground_clearance   3.5669     	0.5401   	6.604 		3.26e-08 ***
 Residual standard error: 9.078 on 47 degrees of freedom
 Multiple R-squared:  0.674,	Adjusted R-squared:  0.6601 
 F-statistic: 48.59 on 2 and 47 DF,  p-value: 3.637e-12
-
-## Results
 
 ### Statistically Significant Variables
 In the first model used, where all of the variables are checked against mpg, vehicle length and ground clearance are statistically significant (2.6x10-12 and 5.2x10-8, respectively). Also, there is a strong correlation given these variables (71.5%).
@@ -45,3 +43,8 @@ ground_clearance 	AWD
 
 ### The Linear Regression Model's Effectiveness
 The model predicts that vehicle length and ground clearance have a strong effect on mpg. The correlation is high but not perfect. This indicates that although the variables are strongly corelated, other unlisted variables may affect mpg.
+
+## Summary Statistics on Suspension Coils
+
+### Design Specifications for Suspension Coils
+The current manufacturing data does not meet the design specification for all manufacturing lots. Lot 1 and Lot 2 are within the design Specifications ("the variance of the suspension coils must not exceed 100 pounds per square inch") however, Lot 3 is off by 170% (Lot 3 Variance = 170PSI).
