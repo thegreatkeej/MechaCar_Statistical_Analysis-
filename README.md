@@ -83,3 +83,22 @@ alternative hypothesis: true mean is not equal to 3.176091
 sample estimates:
 mean of x 
  3.174956
+
+## Study Design: MechaCar vs Competition
+
+### Overview of Potential Study
+Using data on MechaCar's competition, the means of various metrics can be compared to the means of MechaCar's metrics.
+
+### Metrics Used in Tests
+The Metrics used would be: vehicle length, vehicle weight, ground_clearance, engine size, engine torque, vehicle life cycle and price.
+
+### H0 and HA
+H0: If the mean metrics of MechaCar and it's competitors has a p-value greater than 0.05, there is no statistical difference between MechaCar and it's competitors.
+HA: If the mean metrics of MechaCar and it's competitors has a p-value less than 0.05, there is a statistical difference between MechaCar and it's competitors.
+
+### Test to be Used
+A Two-Sampled Test could be used between MechaCar and each competitor. 
+
+### Required Data
+Tables containing: vehicle length, vehicle weight, ground_clearance, engine size, engine torque, vehicle life cycle and price will be needed from MechaCar and all competitors to be tested. Each data set should be of the same length with equivalent measures.
+
