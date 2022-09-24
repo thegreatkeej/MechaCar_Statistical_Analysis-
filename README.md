@@ -48,3 +48,38 @@ The model predicts that vehicle length and ground clearance have a strong effect
 
 ### Design Specifications for Suspension Coils
 The current manufacturing data does not meet the design specification for all manufacturing lots. Lot 1 and Lot 2 are within the design Specifications ("the variance of the suspension coils must not exceed 100 pounds per square inch") however, Lot 3 is off by 170% (Lot 3 Variance = 170PSI).
+
+## T-Tests on Suspension Coils
+
+### "One of these kids is doing their own thing"
+In all three cases (Lot1, Lot 2, Lot 3), the null hypothesis fails to reject however, the differences in lots 1 and 2 are negligible with p-values greater than 0.05. Lot 3 has a p-value of .04, indicating that lot 3 is outside of the population mean and statistically significant (see data below).
+
+#### ttest1:	One Sample t-test
+data:  log10(lot1$PSI)
+t = -0.0022862, df = 49, p-value = 0.9982
+alternative hypothesis: true mean is not equal to 3.176091
+95 percent confidence interval:
+ 3.176010 3.176173
+sample estimates:
+mean of x 
+ 3.176091 
+
+ttest2:	One Sample t-test
+data:  log10(lot2$PSI)
+t = 0.51117, df = 49, p-value = 0.6115
+alternative hypothesis: true mean is not equal to 3.176091
+95 percent confidence interval:
+ 3.175924 3.176373
+sample estimates:
+mean of x 
+ 3.176148 
+
+ttest3:	One Sample t-test
+data:  log10(lot3$PSI)
+t = -2.1137, df = 49, p-value = 0.03966
+alternative hypothesis: true mean is not equal to 3.176091
+95 percent confidence interval:
+ 3.173877 3.176035
+sample estimates:
+mean of x 
+ 3.174956
